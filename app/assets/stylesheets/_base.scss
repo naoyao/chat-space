@@ -1,0 +1,57 @@
+// ========================================
+//共通部分　全体
+// ========================================
+body {
+  font-family: 'Noto Sans Japanese', "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif; }
+
+*, *::before, *::after {
+  box-sizing: border-box; }
+
+input, textarea, select, option, button {
+  font-family: inherit;
+  color: inherit; }
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom; }
+
+li, nav ul, nav ol {
+  list-style: none;
+  list-style-image: none; }
+
+ul, ol {
+  margin-left: 0;
+  padding: 0; }
+
+a, p {
+  text-decoration: none; }
+
+a:hover {
+  color: #888; }
+
+p {
+  margin-bottom: 5px;
+  // line-height: 1.5em;
+ }
+//
+// a, p{
+//   color: #333;
+//   // color: #eee;
+// }
+
+// h1, h2, h3, .copyright {
+//   color: #333; }
+
+.inner {
+  max-width: 90%;
+  width: 1080px;
+  margin: 0 auto; }
+
+.cf::after {
+  content: '';
+  display: block;
+  clear: both; }
+.taxc{
+  text-align: center;
+}

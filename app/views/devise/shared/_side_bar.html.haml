@@ -1,0 +1,32 @@
+/ ユーザー名を表示させるためビューファイルを変更
+-# サイドバー
+.side-bar
+  .header
+    %h3.header__name
+      = current_user.name
+    %ul.header__lists
+      / グループ新規ページに遷移するためのパスを追加
+      %li.list
+        = = link_to new_groups_path do
+          = fa_icon 'pencil-square-o', class: 'icon'
+      / ユーザー編集ページに遷移するためのパスを追加
+      %li.list
+        = link_to edit_user_path(current_user) do
+          = fa_icon 'cog', class: 'icon'
+
+  .groups
+    .group
+      .group__name
+        グループ名
+      .group__message
+        新着メッセージ
+    .group
+      .group__name
+        グループ名
+      .group__message
+        新着メッセージ
+    .group
+      .group__name
+        グループ名
+      .group__message
+        新着メッセージ

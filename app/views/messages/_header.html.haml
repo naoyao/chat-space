@@ -1,0 +1,13 @@
+.header.cf
+  .left-header
+    .left-header__title.cf
+      = @group.name
+    .left-header__members
+      Member:
+      - @group.users.each do |member|
+        = member.name + " "
+
+    -# = current_user.name
+  .right-header
+    .right-header__button
+    = link_to "Edit", edit_group_path(@group)

@@ -1,0 +1,34 @@
+@import "./reset";
+@import "./base";
+@import "font-awesome";
+@import "./config/config";
+@import "./mixin/mixin";
+@import "./flash";
+@import "./messages/messages";
+@import "./groups/group";
+@import "./groups/groups";
+@import "./users/user";
+
+
+
+// configフォルダ
+// configフォルダは、プロジェクトの設定ファイルや、scssで使用する変数を定義するファイルなどを管理するフォルダです。
+//
+// mixinフォルダ
+// mixinフォルダは、scss内で使用するmixinファイルを管理するフォルダです。
+//
+// modulesフォルダ
+// modulesフォルダはモジュールを管理するためのフォルダです。
+// モジュールとは、いくつかの要素をまとめた部品の集合という意味です。
+// ヘッダー、フッターのような用途ごとに分けることができます。
+// モジュールを使うことでまとまったCSSを独立したものとして管理することができます。
+//
+// vendorフォルダ
+// vendorフォルダは、ライブラリのファイルを管理するフォルダです。
+// cssにはライブラリと呼ばれるものがあります。
+// ライブラリとはあらかじめCSSが書かれたファイルです。
+// 有名なCSSのライブラリでは、bootstrapがあげられます。
+// ライブラリを効率よく利用することで、コーディングのスピードが格段に上がります。
+//
+// overrideフォルダ
+// overrideフォルダは、vendorフォルダに格納してある外部のライブラリを上書きするためのscssファイルを管理するフォルダです。

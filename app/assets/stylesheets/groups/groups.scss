@@ -1,0 +1,117 @@
+// =====================================
+// groupsフォルダ---
+// =====================================
+// サイド側ヘッダー：[_sidehead.html.haml]
+
+.sideheader{
+  width: 300px;
+  height: 100px;
+  line-height: 100px;
+  padding: 0 20px;
+  background-color: $sect-color-b2;
+  &__name{
+    color:$sect-color-w;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  &__lists{
+    display: inline-block;
+    float: right;
+  }
+  &__li>a{
+    color:$sect-color-w;
+  }
+}
+.list {
+    display: inline-block;
+}
+
+
+// サイド側メイン：[_group.html/haml]
+.side_bar{
+  float: left;
+  color:$sect-color-w;
+  width: 300px;
+  height: calc(100vh - 100px);
+}
+.groups{
+  height: calc(100vh - 100px);
+  padding: 0 20px;
+  background-color: $sect-color-b3;
+}
+.group{
+  padding: 20px 0 40px;
+  &__name{
+  font-size: 15px;
+  &>a{
+    color:$sect-color-w;
+    }
+  }
+  &__message{
+    font-size: 11px;
+    margin-top: 5px;
+  }
+  & >a{
+    color:$sect-color-w;
+  }
+}
+
+//
+// a{
+//   color:$sect-color-w;
+// }
+//[_form.html.haml]フォーム作成
+.form{
+    height: 90px;
+    padding: 20px 50px 20px 40px;
+    background-color: $sect-color-g3;
+    &__message{
+      color: $sect-color-bk1;
+      float: left;
+      width: calc(100% - 150px);
+      height: 50px;
+      padding: 0 10px;
+      border: none;
+    }
+    &__mask{
+      float: left;
+      height: 50px;
+      padding-right: 10px;
+      background-color: $sect-color-w;
+      &__image{
+        font-size: 20px;
+        line-height: 50px;
+      }
+    }
+    &__submit{
+      float: right;
+      color: $sect-color-w;
+      font-size: 16px;
+      height: 50px;
+      margin-left: 15px;
+      padding: 0 30px;
+      border: none;
+      background-color: $sect-color-b1;
+    }
+  }
+
+
+  // =====================================
+  // groupの「 _form.html.haml」
+  // =====================================
+// HTMLは「user_index.js」の中に記述している。
+.chat-group-use>p{
+  line-height: 50px;
+}
+.chat-group-user__name.chat-group-user__btn.chat-group-user__btn--add{
+  float: left;
+  line-height: 50px;
+}
+.chat-group-user__nam{
+  line-height: 50px;
+}
+.user-search-add{
+  float: right;
+
+}

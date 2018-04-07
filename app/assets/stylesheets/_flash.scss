@@ -1,0 +1,10 @@
+.flash {
+  color: $sect-color-w;
+  text-align: center;
+  &__alert{
+    background-color:$sect-color-orange1 ;
+  }
+  &__notice {
+    background-color: $sect-color-b1;
+  }
+}

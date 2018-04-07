@@ -1,0 +1,4 @@
+
+@mixin border($color:#eeee){
+  border-bottom:1px solid $color;
+}
